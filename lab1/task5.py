@@ -1,6 +1,7 @@
-distance = int(input())
-consumption = float(input())
-cost = int(input())
-
-print("Топливо:", (consumption/100)*distance, "л")
-print("Стоимость:", cost*((consumption/100)*distance), "руб")
+print("Введите длину поездки в км")
+km = abs(float(input()))
+print("Введите расход топлива на 100 км")
+ras = abs(float(input()))
+print("Введите стоимость 1 литра топлива")
+st = abs(float(input()))
+print(f"Необходимо на поездку {km/100*ras:.2f} литров, Стоимость поездки {km/100*ras*st:.2f} рублей")
