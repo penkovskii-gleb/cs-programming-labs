@@ -1,8 +1,6 @@
-vremya = int(input())
-h = vremya // 3600
-vremya = vremya - 3600*h
-m = vremya // 60
-vremya = vremya - 60*m
-s = vremya
-
-print("0"+str(h)+":"+"0"+str(m)+":"+"0"+str(s))
+print("Введите длину поездки в секундах")
+x = abs(int(input()))
+sec = x%60
+min = x//60%60
+h = x//3600
+print(f"Время {h:02d}:{min:02d}:{sec:0.2d}")
