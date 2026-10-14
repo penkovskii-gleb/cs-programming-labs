@@ -1,5 +1,8 @@
-dlina = float(input())
-shirina = float(input())
-
-print(dlina*shirina)
-print(dlina*2+shirina*2)
+print("Введите длину")
+aa = abs(float(input()))
+print("Введите ширину")
+bb = abs(float(input()))
+s = aa*bb
+p = (aa+bb)*2
+print("Площадь прямоугольника",s)
+print("Периметр прямоугольника",p)
